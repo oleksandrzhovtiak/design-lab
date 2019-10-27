@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+.header{
+	background-image: url(../images/header-bg.png) ;
+	background-size: cover;
+	color: #fff;
+	text-transform: uppercase;
+	/* height: 100vh; */
+}
+
+.container{
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logo{
+	fill: #fff;
+	width: 70px;
+	height: 70px;	
+}
+#scroll{
+	width: 25px;
+	height: 40px;
+}
+.header__title{
+	font-size: 54px;
+	font-weight: 700;
+	letter-spacing: 12px;
+	line-height: 60px;
+	margin-top: 90px;
+}
+.header__text{
+	padding-top: 50px;
+	font-size: 15px;
+	line-height: 29px;
+	letter-spacing: .6px;
+}
+.header__logo{
+	padding-top: 285px;
+}
+.header__scroll {
+	padding-top: 240px;
+	padding-bottom: 115px;	
+}
+.about{
+	background: #fff;
+	color:#3c3c3c;
+}
+.about__title{
+	margin-top: 145px;
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 40px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	position: relative;
+	top: -20px;
+}
+ .about__us, .contact, .what-we-do__design{
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+}
+
+#about__us{
+	margin-bottom: 160px;
+}
+.about__text{
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 30px;
+}
+.about__title::before {
+	content: " " ;
+	background: #3c3c3c;
+	position: absolute;
+	top: 50%;
+	height: 2px;
+	width: 25%;
+	left: 0;
+}
+.about__title::after {
+	content: " " ;
+	background: #3c3c3c;
+	position: absolute;
+	top: 50%;
+	height: 2px;
+	width: 25%;
+	right: 0;
+}
+
+.services{
+	background: url(../images/services-bg.png) top no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding-top:115px;
+	padding-bottom: 110px;
+	}
+
+.services__services{
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+
+}
+
+.services__title{
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 40px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	position: relative;
+	top: -20px;
+}
+.services__text{
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 30px;
+}
+.services__title::before {
+	content: " " ;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	height: 2px;
+	width: 25%;
+	left: 0;
+}
+.services__title::after {
+	content: " " ;
+	background:#fff;
+	position: absolute;
+	top: 50%;
+	height: 2px;
+	width: 25%;
+	right: 0;
+}
+.what-we-do{
+	background-color: #fff;
+	color: #3c3c3c;
+	padding-top:115px;
+	padding-bottom: 110px;
+}
+.what-we-do__title{
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 40px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	position: relative;
+	top: -20px;
+}
+.what-we-do__text{
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 30px;
+}
+.what-we-do__des{
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 40px 0;
+}
+.what-we-do__title::before {
+	content: " " ;
+	background: #3c3c3c;
+	position: absolute;
+	top: 50%;
+	height: 2px;
+	width: 25%;
+	left: 0;
+}
+.what-we-do__title::after {
+	content: " " ;
+	background:#3c3c3c;
+	position: absolute;
+	top: 50%;
+	height: 2px;
+	width: 25%;
+	right: 0;
+}
+.what-we-do__icon {
+	width: 83px;
+	height: 83px;
+	fill:#3c3c3c;
+}
+.what-we-do__design-svg{
+	margin-top: 90px;
+}
+.photo__img {
+	width: 28.75%;
+	height: 235px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom:5px;
+}
+.photo-text {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 34px;
+	position: absolute;
+	bottom: 40px;
+	left: 45px;
+	text-transform: uppercase;
+	font-size: 34px;
+}
+.photo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.photo__img-big {
+	width: 41.875%;
+}
+.photo-- {
+	width: 100%;
+	height: 100%;
+}
+.contact__butle{
+	padding: 20px 135px;
+	background: #3c3c3c;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+.footer{
+	margin-top: 60px;
+	max-height: 40px;
+	display: inline-block;
+	position: relative;
+	padding-bottom: 60px; 
+}
+.footer__text{
+	display: inline-block;
+	padding: 40px; 
+}
+.logo__footer{
+	width: 39px;
+	height: 39px;
+	fill: #3c3c3c;
+
+}
